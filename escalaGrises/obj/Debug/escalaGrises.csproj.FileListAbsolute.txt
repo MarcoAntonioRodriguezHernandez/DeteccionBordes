@@ -1,0 +1,44 @@
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\bin\Debug\escalaGrises.exe.config
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\bin\Debug\escalaGrises.exe
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\bin\Debug\escalaGrises.pdb
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.AssemblyReference.cache
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.SuggestedBindingRedirects.cache
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\obj\Debug\escalaGrises.Form1.resources
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\obj\Debug\escalaGrises.Properties.Resources.resources
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.GenerateResource.cache
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.CoreCompileInputs.cache
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\obj\Debug\escalaGrises.exe
+C:\Anghel\Anghel\Development\C-Sharp\Prácticas Homer\escalaGrises\escalaGrises\escalaGrises\obj\Debug\escalaGrises.pdb
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\bin\Debug\escalaGrises.exe.config
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\bin\Debug\escalaGrises.exe
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\bin\Debug\escalaGrises.pdb
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.AssemblyReference.cache
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.SuggestedBindingRedirects.cache
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\obj\Debug\escalaGrises.Form1.resources
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\obj\Debug\escalaGrises.Properties.Resources.resources
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.GenerateResource.cache
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.CoreCompileInputs.cache
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\obj\Debug\escalaGrises.exe
+C:\Users\Anghel\Desktop\escalaGrises\escalaGrises\obj\Debug\escalaGrises.pdb
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\bin\Debug\escalaGrises.exe.config
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\bin\Debug\escalaGrises.exe
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\bin\Debug\escalaGrises.pdb
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.AssemblyReference.cache
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.SuggestedBindingRedirects.cache
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\obj\Debug\escalaGrises.Form1.resources
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\obj\Debug\escalaGrises.Properties.Resources.resources
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.GenerateResource.cache
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\obj\Debug\escalaGrises.csproj.CoreCompileInputs.cache
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\obj\Debug\escalaGrises.exe
+C:\Users\Anghel\Documents\LaptopData\Homer\escalaGrises\escalaGrises\obj\Debug\escalaGrises.pdb
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\bin\Debug\escalaGrises.exe.config
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\bin\Debug\escalaGrises.exe
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\bin\Debug\escalaGrises.pdb
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\obj\Debug\escalaGrises.csproj.AssemblyReference.cache
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\obj\Debug\escalaGrises.csproj.SuggestedBindingRedirects.cache
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\obj\Debug\escalaGrises.Form1.resources
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\obj\Debug\escalaGrises.Properties.Resources.resources
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\obj\Debug\escalaGrises.csproj.GenerateResource.cache
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\obj\Debug\escalaGrises.csproj.CoreCompileInputs.cache
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\obj\Debug\escalaGrises.exe
+C:\Users\marco\Documents\Repositorios_UPT\manejadorImagenes\escalaGrises\obj\Debug\escalaGrises.pdb
