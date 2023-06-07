@@ -147,146 +147,12 @@ namespace escalaGrises
             pb_bordes.Image = final;
         }
 
-        private void btn_etiquetar_Click_1(object sender, EventArgs e) {
-
-            /*int w = bitmap.Width;
-            int h = bitmap.Height;
-            Color actual, nuevoColor;
-            int etiqueta = 1;
-            int[,] etiquetas = new int[w, h];
-
-            // Crear nuevo bitmap
-            final = new Bitmap(w, h);
-
-            // Recorrer píxeles de la imagen
-            for (int i = 0; i < w; i++)
-            {
-                for (int j = 0; j < h; j++)
-                {
-                    actual = bitmap.GetPixel(i, j);
-
-                    // Verificar si el píxel es negro
-                    if (actual == Color.Black)
-                    {
-                        // Obtener las etiquetas de los píxeles vecinos
-                        List<int> etiquetasVecinos = new List<int>();
-
-                        // Verificar vecino superior
-                        if (j > 0)
-                        {
-                            etiquetasVecinos.Add(etiquetas[i, j - 1]);
-                        }
-
-                        // Verificar vecino izquierdo
-                        if (i > 0)
-                        {
-                            etiquetasVecinos.Add(etiquetas[i - 1, j]);
-                        }
-
-                        // Verificar vecino superior izquierdo
-                        if (i > 0 && j > 0)
-                        {
-                            etiquetasVecinos.Add(etiquetas[i - 1, j - 1]);
-                        }
-
-                        // Verificar vecino superior derecho
-                        if (i < w - 1 && j > 0)
-                        {
-                            etiquetasVecinos.Add(etiquetas[i + 1, j - 1]);
-                        }
-
-                        // Verificar etiquetas de vecinos
-                        if (etiquetasVecinos.Count == 0)
-                        {
-                            // No hay vecinos con etiqueta
-                            etiquetas[i, j] = etiqueta;
-                            etiqueta++;
-                        }
-                        else
-                        {
-                            // Asignar etiqueta mínima a los vecinos
-                            etiquetas[i, j] = etiquetasVecinos.Min();
-
-                            // Actualizar etiquetas de vecinos
-                            foreach (int etiquetaVecino in etiquetasVecinos)
-                            {
-                                if (etiquetaVecino != etiquetas[i, j])
-                                {
-                                    // Actualizar etiqueta
-                                    for (int x = 0; x < w; x++)
-                                    {
-                                        for (int y = 0; y < h; y++)
-                                        {
-                                            if (etiquetas[x, y] == etiquetaVecino)
-                                            {
-                                                etiquetas[x, y] = etiquetas[i, j];
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-            }/*
-            // Generar colores aleatorios para las etiquetas
-            Random rand = new Random();
-            Dictionary<int, Color> coloresEtiquetas = new Dictionary<int, Color>();
-
-            for (int x = 1; x < etiqueta; x++)
-            {
-                // Generar color aleatorio
-                Color colorEtiqueta = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
-
-                // Asignar color a la etiqueta
-                coloresEtiquetas[x] = colorEtiqueta;
-            }
-
-            // Asignar colores a los píxeles etiquetados
-            for (int p = 0; p < w; p++)
-            {
-                for (int o = 0; o < h; o++)
-                {
-                    if (etiquetas[p, o] != 0)
-                    {
-                        nuevoColor = coloresEtiquetas[etiquetas[p, o]];
-                    }
-                    else
-                    {
-                        nuevoColor = Color.White;
-                    }
-
-                    // Guardar pixel con nuevo color
-                    final.SetPixel(p, o, nuevoColor);
-                }
-            }
-        }
-        pb_etiquetas.Image = final;
-
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < w; i++)
-        {
-            for (int j = 0; j < h; j++)
-            {
-                sb.Append(etiquetas[i, j]);
-                sb.Append("\t");
-            }
-            sb.AppendLine();
-        }
-
-        // Guardar archivo de texto
-        SaveFileDialog s = new SaveFileDialog();
-        s.Filter = "Archivo de texto (*.txt)|*.txt";
-        if (s.ShowDialog() == DialogResult.OK)
-        {
-            string filePath = s.FileName;
-            System.IO.File.WriteAllText(filePath, sb.ToString());
-        }
-    }*/
+        private void btn_etiquetar_Click_1(object sender, EventArgs e) { 
 
             int w = bitmap.Width;
             int h = bitmap.Height;
-            int etiqueta = 1;
-            int[,] etiquetas = new int[w, h];
+            long etiqueta1 = 1;
+            long[,] etiquetas = new long[w, h];
 
             // Etiquetado de regiones utilizando el algoritmo iterativo
             for (int i = 0; i < w; i++)
@@ -305,8 +171,15 @@ namespace escalaGrises
                         }
                         else
                         {
-                            etiquetas[j, i] = etiqueta;
-                            etiqueta++;
+                            etiquetas[j, i] = etiqueta1;
+                            if (etiqueta1 == etiquetas[j, i])
+                            {
+
+                            }
+                            else {
+                                etiqueta1++;
+                            }
+                            
                         }
                     }
                 }
@@ -333,7 +206,58 @@ namespace escalaGrises
             }
         
     }
- 
+
+        private void btn_reetiquetar_Click(object sender, EventArgs e)
+        {
+            int w = bitmap.Width;
+            int h = bitmap.Height;
+            int etiqueta = 1;
+            int[,] etiquetas = new int[w, h];
+
+            // Etiquetado de regiones utilizando el algoritmo iterativo de derecha a izquierda y de abajo hacia arriba
+            for (int j = h - 1; j >= 0; j--)
+            {
+                for (int i = w - 1; i >= 0; i--)
+                {
+                    if (final.GetPixel(i, j).ToArgb() == Color.White.ToArgb())
+                    {
+                        if (i < w - 1 && etiquetas[i + 1, j] != 0)
+                        {
+                            etiquetas[i, j] = etiquetas[i + 1, j];
+                        }
+                        else if (j < h - 1 && etiquetas[i, j + 1] != 0)
+                        {
+                            etiquetas[i, j] = etiquetas[i, j + 1];
+                        }
+                        else
+                        {
+                            etiquetas[i, j] = etiqueta;
+                            etiqueta++;
+                        }
+                    }
+                }
+            }
+
+            // Exportar etiquetas a un archivo de texto
+            SaveFileDialog s = new SaveFileDialog();
+            s.Filter = "Archivo de texto (*.txt)|*.txt";
+
+            if (s.ShowDialog() == DialogResult.OK)
+            {
+                StringBuilder sb = new StringBuilder();
+
+                for (int j = 0; j < h; j++)
+                {
+                    for (int i = 0; i < w; i++)
+                    {
+                        sb.Append(etiquetas[i, j] + " ");
+                    }
+                    sb.AppendLine();
+                }
+
+                File.WriteAllText(s.FileName, sb.ToString());
+            }
+        }
 
         private void btn_histograma_Click(object sender, EventArgs e)
         {

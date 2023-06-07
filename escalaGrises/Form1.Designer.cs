@@ -42,6 +42,7 @@
             this.btn_bordes = new System.Windows.Forms.Button();
             this.btn_histograma = new System.Windows.Forms.Button();
             this.btn_etiquetar = new System.Windows.Forms.Button();
+            this.btn_reetiquetar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_color)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_blancoNegro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -165,12 +166,23 @@
             this.btn_etiquetar.UseVisualStyleBackColor = true;
             this.btn_etiquetar.Click += new System.EventHandler(this.btn_etiquetar_Click_1);
             // 
+            // btn_reetiquetar
+            // 
+            this.btn_reetiquetar.Location = new System.Drawing.Point(626, 626);
+            this.btn_reetiquetar.Name = "btn_reetiquetar";
+            this.btn_reetiquetar.Size = new System.Drawing.Size(209, 60);
+            this.btn_reetiquetar.TabIndex = 10;
+            this.btn_reetiquetar.Text = "Reetiquetar";
+            this.btn_reetiquetar.UseVisualStyleBackColor = true;
+            this.btn_reetiquetar.Click += new System.EventHandler(this.btn_reetiquetar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1585, 741);
+            this.Controls.Add(this.btn_reetiquetar);
             this.Controls.Add(this.btn_etiquetar);
             this.Controls.Add(this.btn_histograma);
             this.Controls.Add(this.btn_bordes);
@@ -206,6 +218,7 @@
         private System.Windows.Forms.Button btn_bordes;
         private System.Windows.Forms.Button btn_histograma;
         private System.Windows.Forms.Button btn_etiquetar;
+        private System.Windows.Forms.Button btn_reetiquetar;
     }
 }
 
